@@ -16,6 +16,17 @@ li{
   list-style: none;
 }
 
+h2{
+  color: white;
+  padding: 10px 0;
+}
+h3{
+  color: white;
+}
+h4{
+  color: #797c80;
+}
+
 /*debug*/
 .debug{
   background-color: rgba(144, 238, 144, .3) ;
@@ -95,6 +106,21 @@ main .main-section{
 .uppercase{
   text-transform: uppercase;
 }
+.v-p10{
+  padding: 10px 0;
+}
+.v-p20{
+  padding: 20px 0;
+}
+.v-p30{
+  padding: 30px 0;
+}
+.v-p40{
+  padding: 40px 0;
+}
+.v-m40{
+  margin: 40px 0;
+}
 
 
 /******************main*******************/
@@ -117,7 +143,46 @@ main .main-section{
 .card{
   width: 100%;
 }
-.box-card{
-  gap: 20px;
+.card-section{
   padding: 20px
 }
+.box-card{
+  gap: 20px;
+  padding: 10px 0;
+}
+.card{
+  flex-direction: column;
+  align-items: center;
+}
+.creato-per{
+  padding: 0px 20px
+}
+.popular{
+  padding: 0 20px
+}
+.popular img{
+  border-radius: 50%;
+}
+
+  a.card{
+    padding: 0;
+  }
+  a.card .card-img{
+    position: relative
+    
+  }
+  a.card:hover .card-img{
+    opacity: 0.6;
+    
+  }
+  a.card:hover .card-img::after{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f144';
+    position: absolute;                                 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+  }
