@@ -7,8 +7,11 @@
 img{
   width: 100%;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
-/******************layout*******************/
 /*debug*/
 .debug{
   background-color: rgba(144, 238, 144, .3) ;
@@ -21,6 +24,7 @@ img{
   border: 1px solid green;
 }
 /*debug*/
+/******************layout*******************/
 
 
 
@@ -51,6 +55,14 @@ main .main-section{
   width: 100%;
   overflow: auto;
 }
+/******************layout*******************/
+/*btn*/
+.btn{
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
 
 /******************utility*******************/
 .d-flex{
@@ -80,4 +92,10 @@ main .main-section{
   border-bottom: 2px solid #adff2f ;
 }
 
-
+/******************main*******************/
+/*upgrade-section*/
+.upgrade-section{
+  padding: 35px 20px;
+  height: 90px;
+  text-align: right;
+}
