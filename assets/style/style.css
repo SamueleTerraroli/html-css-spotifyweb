@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/******************layout*******************/
+/*debug*/
+.debug{
+  background-color: rgba(144, 238, 144, .3) ;
+  border: 1px solid red;
+}
+.d-box{
+  min-height: 20px;
+  background-color: rgba(255, 0, 0, .3);
+  padding: 20px 40px;
+  border: 1px solid green;
+}
+/*debug*/
+
+
+
+main{
+  height: calc(100vh - 90px);
+}
+
+footer {
+  height: 90px;
+}
+
+/*sidebar-layout*/
+main .sidebar{
+  width: 230px;
+  height: 100%;
+}
+main .sidebar .main{
+  height:calc(100% - 90px) ;
+  overflow: auto;
+}
+main .sidebar .footer{
+  height: 90px;
+}
+
+/*main-section-layout*/
+
+main .main-section{
+  width: 100%;
+  overflow: auto;
+}
