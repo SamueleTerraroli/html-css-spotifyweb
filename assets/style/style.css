@@ -8,12 +8,15 @@ body{
 }
 
 img{
-  width: 100%;
+  max-width: 100%;
 }
 a{
   text-decoration: none;
   color: white;
   padding: 20px;
+}
+a:hover{
+  color: white;
 }
 li{
   list-style: none;
@@ -25,9 +28,16 @@ h2{
 }
 h3{
   color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
 }
 h4{
   color: #797c80;
+  font-size: 0.9rem;
+}
+.col h4{
+  text-align: center;
 }
 
 /*debug*/
@@ -81,6 +91,10 @@ main .main-section{
   border: 1px solid white;
   border-radius: 20px;
 }
+.btn:hover{
+  border: 2px solid white;
+
+}
 
 /******************utility*******************/
 .d-flex{
@@ -128,16 +142,37 @@ main .main-section{
 
 /******************main*******************/
 /*upgrade-section*/
-.upgrade-section{
-  padding: 35px 20px;
-  height: 90px;
-  text-align: right;
-}
+  .upgrade-section{
+    padding: 35px 20px;
+    height: 90px;
+    text-align: right;
+  }
 /*nav-section*/
 .nav-section ul{
   justify-content: center;
+  flex-wrap: wrap;
   padding: 1rem;
   margin-bottom: 40px;
+}
+.nav-section li{
+  margin: 20px 0;
+
+}
+
+.selected{
+  position: relative;;
+}
+main .main-section .selected::after{
+  display: block;
+  content: '';
+ width: 30%;
+ height: 3px;
+ background: #adff2f;
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ transform: translate(-50%);
+ 
 }
 /*card-section*/
 .col{
@@ -188,4 +223,41 @@ main .main-section{
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3rem;
+  }
+/******************sidebar*******************/
+  .sidebar .header{
+    height: 90px;
+}
+  .sidebar .selected{
+    border-left: 4px solid #adff2f ;
+    
+}
+
+  .sidebar .header img{
+  max-width: 120px;
+  padding: 20px 0;
+}
+  .sidebar li{
+  padding: 15px 0;
+}
+  .item-home:before{
+    content: url(../img/home.svg);
+    display: inline-block;
+    width: 2rem;
+    padding-left:20px;
+    vertical-align: middle;
+  }
+  .item-search:before{
+    content: url(../img/search.svg);
+    display: inline-block;
+    width: 2rem;
+    padding-left:20px;
+    vertical-align: middle;
+  }
+  .item-library:before{
+    content: url(../img/libreria.svg);
+    display: inline-block;
+    width: 2rem;
+    padding-left:20px;
+    vertical-align: middle;
   }
