@@ -10,6 +10,10 @@ img{
 a{
   text-decoration: none;
   color: white;
+  padding: 20px;
+}
+li{
+  list-style: none;
 }
 
 /*debug*/
@@ -87,10 +91,11 @@ main .main-section{
 .t-white{
   color:white;
 }
-.selected{
-  padding: 10px 30px;
-  border-bottom: 2px solid #adff2f ;
+
+.uppercase{
+  text-transform: uppercase;
 }
+
 
 /******************main*******************/
 /*upgrade-section*/
@@ -98,4 +103,21 @@ main .main-section{
   padding: 35px 20px;
   height: 90px;
   text-align: right;
+}
+/*nav-section*/
+.nav-section ul{
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 40px;
+}
+/*card-section*/
+.col{
+  flex-basis: calc(100%/6);
+}
+.card{
+  width: 100%;
+}
+.box-card{
+  gap: 20px;
+  padding: 20px
 }
