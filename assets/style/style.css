@@ -24,7 +24,7 @@ li{
 
 h2{
   color: white;
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 h3{
   color: white;
@@ -35,6 +35,7 @@ h3{
 h4{
   color: #797c80;
   font-size: 0.9rem;
+  padding: 10px;
 }
 .col h4{
   text-align: center;
@@ -67,9 +68,10 @@ footer {
 /*sidebar-layout*/
 main .sidebar .header{
   height: 350px;
+  width: 230px;
 }
 main .sidebar{
-  width: 230px;
+  
   height: 100%;
 }
 main .sidebar .main{
@@ -187,6 +189,7 @@ main .main-section .selected::after{
 /*card-section*/
 .col{
   flex-basis: calc(100%/6);
+  padding: 0 10px;
 }
 .card{
   width: 100%;
@@ -195,7 +198,6 @@ main .main-section .selected::after{
   padding: 20px
 }
 .box-card{
-  gap: 20px;
   padding: 10px 0;
 }
 .card{
@@ -433,4 +435,14 @@ footer .settings{
 }
 
 /*@media*/
-@media (max-width:699px)
+@media (max-width:1100px){
+  .col{
+    flex-basis: calc(100%/4);
+  }
+  .box-card.d-flex{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:699px){
+
+}
