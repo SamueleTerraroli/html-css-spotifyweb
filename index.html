@@ -11,14 +11,10 @@
 
   <main class="d-flex">
 
-    <section class="sidebar b-color-sidebar">
-      
-      <div class="header">
+    <section class="sidebar b-color-sidebar">     
+      <div class="header hide">
         <div class="logo-section">
           <a href="#"><img src="assets/img/logo.svg" alt="Spotify"></a>
-          <a class="small logo" href="#"><img src="assets/img/logo-small.svg" alt=""></a>
-          <a class="small search" href="#"><img src="assets/img/search.svg" alt=""></a>
-          <a class="small library" href="#"><img src="assets/img/search.svg" alt=""></a>
           <nav>
             <ul class="home">
               <li class=""><a class="item home selected" href="#">Home</a></li>
@@ -31,7 +27,7 @@
           </nav>
         </div>
       </div>  
-      <div class="main">
+      <div class="main hide">
         <nav>
           <ul>
             <li class=""><a class="item " href="#">Nome Playlist</a></li>
@@ -43,14 +39,25 @@
           </ul>
         </nav>
       </div>
-
-      <div class="footer">
+      <div class="footer hide">
         <div><a href="#" class="item instal">Installa app</a></div>
         <div class="bar"></div>
         <div><a href="#" class="item profile"><strong>John Doe</strong></a></div>
       </div>
-
+      <div class="sidebar show">
+        <div class="header show">
+          <a class="small logo" href="#"><i class="fa-brands fa-spotify"></i></a>
+          <a class="small home" href="#"><i class="fa-solid fa-house"></i></a>
+          <a class="small search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a class="small library" href="#"><i class="fa-solid fa-lines-leaning"></i></a>
+        </div>
+        <div class="footer show">
+          <a class="small logo" href="#"><i class="fa-regular fa-circle-down"></i></a>
+          <a class="small home" href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>  
     </section>
+
     <section class="main-section b-color-main">
       <div class="upgrade-section b-color-upgrade">
         
