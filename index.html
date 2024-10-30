@@ -12,23 +12,40 @@
   <main class="d-flex">
 
     <section class="sidebar b-color-sidebar">
-
-      <div class="header">
-        <a href="#"><img src="assets/img/logo.svg" alt="Spotify"></a>
-      </div>
       
       <div class="main">
+        <div class="logo-section">
+          <a href="#"><img src="assets/img/logo.svg" alt="Spotify"></a>
+          <a class="small logo" href="#"><img src="assets/img/logo-small.svg" alt=""></a>
+          <a class="small search" href="#"><img src="assets/img/search.svg" alt=""></a>
+          <a class="small library" href="#"><img src="assets/img/search.svg" alt=""></a>
+        </div>
+      
+        <nav>
+          <ul class="home">
+            <li class=""><a class="item home selected" href="#">Home</a></li>
+            <li class=""><a class="item search" href="#">Cerca</a></li>
+            <li class=""><a class="item library" href="#">la tua ibreria</a></li>
+          </ul>
+        </nav>
         <nav>
           <ul>
-            <li class="item-home selected"><a class="" href="#">Home</a></li>
-            <li class="item-search"><a href="#">Cerca</a></li>
-            <li class="item-library"><a href="#">la tua ibreria</a></li>
+            <h3>PLAYLIST</h3>
+            <li class=""><a class="item plus " href="#"><h4>Crea playlist</h4></a></li>
+            <li class=""><a class="item " href="#">Nome Playlist</a></li>
+            <li class=""><a class="item " href="#">Nome Playlist</a></li>
+            <li class=""><a class="item " href="#">Nome Playlist</a></li>
+            <li class=""><a class="item " href="#">Nome Playlist</a></li>
+            <li class=""><a class="item " href="#">Nome Playlist</a></li>
+            <li class=""><a class="item " href="#">Nome Playlist</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="footer">
-
+        <div><a href="#" class="item instal">Installa app</a></div>
+        <div class="bar"></div>
+        <div><a href="#" class="item profile"><strong>John Doe</strong></a></div>
       </div>
 
     </section>
@@ -187,7 +204,46 @@
 
   </main>
 
-  <footer class="b-color-footer">
+  <footer class="b-color-footer d-flex">
+    <div class="brano col d-flex">
+      <div class="img"><img src="assets/img/sinister.jpeg" alt="Sinister"></div>
+      <div class="riproducted-song">
+        <a href="#"><h3>Sinister</h3></a>
+        <a href="#"><h4>brano nome</h4></a>
+      </div>
+      <div class="icon">
+        <a href="#" class="item heart"><i class="fa-regular fa-heart"></i></a>
+        <a href="#" class="item folder"><i class="fa-regular fa-folder"></i></a>
+      </div>  
+    </div>
+    <div class="riproduction col">
+      <div class="console row">
+        <a class="icon" href="#"><i class="fa-solid fa-shuffle"></i></a>
+        <a class="icon" href="#"><i class="fa-solid fa-backward-step"></i></a>
+        <a class="icon" href="#"><i class="fa-regular fa-circle-play"></i></a>
+        <a class="icon" href="#"><i class="fa-solid fa-forward-step"></i></a>
+        <a class="icon" href="#"><i class="fa-solid fa-rotate-right"></i></a>     
+      </div>
+      <div class="bar row">
+        <p>0:25</p>
+        <div class="bar-background">
+          <div class="bar"></div>
+        </div>
+        <p>4:35</p>
+      </div>
+    </div>
+    <div class="settings col row">
+      <div class="icon">
+        <a href="#" class="item menu"><i class="fa-solid fa-list-ul"></i></a>
+        <a href="#" class="item monitor"><i class="fa-solid fa-desktop"></i></a>
+        <a href="#" class="item volume"><i class="fa-solid fa-volume-low"></i></a>
+      </div>  
+      <div class="bar-background">
+        <div class="bar"></div>
+      </div>
+
+    </div>
+    
     
   </footer>
   
