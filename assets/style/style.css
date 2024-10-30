@@ -65,12 +65,15 @@ footer {
 }
 
 /*sidebar-layout*/
+main .sidebar .header{
+  height: 350px;
+}
 main .sidebar{
   width: 230px;
   height: 100%;
 }
 main .sidebar .main{
-  height:calc(100% - 90px) ;
+  height:calc(100% - 440px) ;
   overflow: auto;
 }
 main .sidebar .footer{
@@ -151,7 +154,7 @@ main .main-section{
     text-align: right;
     position: sticky;
     top: 0;
-    opacity:0.8 ;
+    opacity:0.6 ;
     z-index: 999;
   }
 /*nav-section*/
@@ -232,14 +235,23 @@ main .main-section .selected::after{
     font-size: 3rem;
   }
 /******************sidebar*******************/
+.sidebar .header nav{
+  padding: 10px 0px;
+}
+.sidebar .header ul:last-child{
+  margin-top: 10px;
+}
+.playlist{
+  padding: 0 20px;
+}
 
-  .sidebar .selected{
+.sidebar .selected{
     border-left: 4px solid #adff2f ;
     color: white;
     opacity: 1;
 }
-.sidebar nav:last-child{
-  padding:30px 20px;
+.sidebar .main nav{
+  padding:10px 20px;
 }
 .sidebar h3{
   text-align: left;
@@ -420,3 +432,5 @@ footer .settings{
   justify-content: end;
 }
 
+/*@media*/
+@media (max-width:699px)
